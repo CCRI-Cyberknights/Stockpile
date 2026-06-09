@@ -1,0 +1,29 @@
+{
+  "name": "stockpile",
+  "version": "1.0.0",
+  "description": "WIP",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CCRI-Cyberknights/Stockpile.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CCRI-Cyberknights/Stockpile/issues"
+  },
+  "homepage": "https://github.com/CCRI-Cyberknights/Stockpile#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.2"
+  },
+  "dependencies": {
+    "electron": "^42.3.3",
+    "play-sound": "^1.1.6"
+  }
+}
