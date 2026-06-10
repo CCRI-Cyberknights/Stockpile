@@ -1,10 +1,19 @@
 {
   "name": "stockpile",
+  "private": true,
   "version": "1.0.0",
-  "description": "WIP",
+  "description": "Electron desktop app for guided CTF practice with a local Ollama assistant and a React renderer.",
   "main": "src/main.js",
+  "type": "module",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dev": "concurrently -k \"npm:dev:renderer\" \"npm:dev:electron\"",
+    "dev:renderer": "vite",
+    "dev:electron": "wait-on tcp:5173 && cross-env VITE_DEV_SERVER_URL=http://127.0.0.1:5173 electron .",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "test:e2e": "playwright test"
   },
   "repository": {
     "type": "git",
@@ -13,18 +22,31 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "bugs": {
     "url": "https://github.com/CCRI-Cyberknights/Stockpile/issues"
   },
   "homepage": "https://github.com/CCRI-Cyberknights/Stockpile#readme",
-  "devDependencies": {
-    "@playwright/test": "^1.60.0",
-    "@types/node": "^25.9.2"
-  },
   "dependencies": {
     "electron": "^42.3.3",
     "ollama": "^0.6.3",
-    "play-sound": "^1.1.6"
+    "play-sound": "^1.1.6",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "vite": "^8.0.12",
+    "wait-on": "^9.0.3"
   }
 }

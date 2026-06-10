@@ -1,1 +1,1 @@
-module.exports = require('./preload.cjs')
+import './preload.cjs'

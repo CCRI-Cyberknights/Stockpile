@@ -1,0 +1,73 @@
+:root {
+  --bg-deep: #081118;
+  --bg-mid: #0c1720;
+  --panel-surface: rgba(10, 22, 30, 0.82);
+  --panel-shadow: rgba(0, 0, 0, 0.28) 0 20px 45px;
+  --text-main: #f0f7f4;
+  --text-soft: #9eb7af;
+  --accent-soft: #7ff0c1;
+  --font-body: 'Aptos', 'Segoe UI Variable Text', 'Trebuchet MS', sans-serif;
+  --font-heading: 'Bahnschrift', 'Aptos Display', 'Segoe UI Variable Display', sans-serif;
+  --font-mono: 'Cascadia Code', 'Consolas', monospace;
+
+  color-scheme: dark;
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  color: var(--text-main);
+  background:
+    radial-gradient(circle at top left, rgba(127, 240, 193, 0.16), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(64, 182, 196, 0.18), transparent 22%),
+    linear-gradient(180deg, var(--bg-deep), var(--bg-mid));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+textarea {
+  font: inherit;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  color: var(--text-main);
+}
+
+h1 {
+  font-size: clamp(2.6rem, 5vw, 4.6rem);
+  line-height: 0.94;
+  letter-spacing: -0.05em;
+}
+
+h2 {
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+
+p,
+pre {
+  margin: 0;
+}
+
+pre,
+textarea {
+  font-family: var(--font-mono);
+}
