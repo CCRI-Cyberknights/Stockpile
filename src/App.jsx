@@ -16,19 +16,31 @@ function App() {
 //   ...prev,
 //   selectedModel: 'new-model-name',
 // }))
+  useEffect(() => {
+    console.log('appState changed:', appState)
+  }, [appState])
 
   useEffect(() => {
     networking.NET_getLocalModels().then((result) => {
       let models = {}
+      let firstModel = ""
 
       for (const instance of result["models"]) {
         models[instance.name] = {name: instance.name, size: instance.details.parameter_size}
+        if (!firstModel) {
+          firstModel = instance.name
+        }
       }
 
-      console.log('appStateModels = ', models)
+      
       setAppState((prev) => ({
         ...prev,
         allModels: models
+      }))
+
+      setAppState((prev) => ({
+        ...prev,
+        selectedModel: firstModel || -1
       }))
 
     })

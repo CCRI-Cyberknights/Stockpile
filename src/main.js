@@ -98,6 +98,23 @@ ipcMain.handle('ask-ollama', async (_event, prompt, model) => {
   }
 })
 
+let playwrightBrowser = null
+let playwrightPage = null
+
+ipcMain.handle('start-playwright-browser', async () => {
+  if (playwrightBrowser) {
+    return true
+  }
+
+  const { chromium } = await import('playwright')
+  playwrightBrowser = await chromium.launch({ headless: false })
+
+  const context = await playwrightBrowser.newContext()
+  playwrightPage = await context.newPage()
+
+  return true
+})
+
 app.whenReady().then(() => {
   createWindow()
 

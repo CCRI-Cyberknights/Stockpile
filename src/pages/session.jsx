@@ -7,12 +7,18 @@ const starterPrompt = [
   'Confirm that you are online and ready to inspect page structure, controls, and suspicious DOM behavior.',
 ].join(' ')
 
+
 function SessionPage({appState, setAppState}) {
   const [prompt, setPrompt] = useState(starterPrompt)
   const [response, setResponse] = useState('')
   const [error, setError] = useState('')
   const [isLoading, setIsLoading] = useState(false)
-
+  
+  useEffect(() => {
+    window.api.startPlaywrightBrowser().catch((error) => {
+      console.error('Failed to start Playwright browser:', error)
+    })
+  }, [])
   useEffect(() => {
     const audio = new Audio('/media/audio/REACH_Stockpile.wav')
     audio.volume = 0.3
@@ -48,7 +54,7 @@ function SessionPage({appState, setAppState}) {
   setError('')
 
   try {
-    const result = await window.api.askOllama(cleanPrompt, appState.selectedModel ?? 'mannix/llama3.1-8b-abliterated') // default to allModels[0] later on.
+    const result = await window.api.askOllama(cleanPrompt, appState.selectedModel) // default to allModels[0] later on.
 
     if (!result?.success) {
       setError(result?.error ?? 'Ollama did not return a response.')
@@ -83,7 +89,7 @@ function SessionPage({appState, setAppState}) {
           {/* <span className={`status-pill ${hasBridge ? 'ready' : 'missing'}`}>
             {hasBridge ? 'Electron bridge online' : 'Electron bridge missing'}
           </span> */}
-          <p>Model target: {appState.selectedModel?.name ?? 'none'}</p>
+          <p>Model target: {appState.selectedModel ?? 'none'}</p>
           <p>Ollama Net Socket: 127.0.0.1:11434</p>
         </aside>
       </header>

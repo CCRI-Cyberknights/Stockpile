@@ -10,7 +10,7 @@ function DashboardPage({ appState, setAppState, onContinue }) {
         setSelectedModel(value)
         setAppState((prev) => ({
             ...prev,
-            selectedModel: appState.allModels[value],
+            selectedModel: appState.allModels[value].name,
         }))
         console.log('selectedModel = ', value)
     }
