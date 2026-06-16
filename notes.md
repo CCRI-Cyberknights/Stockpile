@@ -1,0 +1,1 @@
+* why is the deugging tools showing #2 for the GATE RESULT log? it should only be once.

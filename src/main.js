@@ -81,14 +81,14 @@ function createWindow() {
   loadRenderer(window)
 }
 
-ipcMain.handle('ask-ollama', async (_event, prompt) => {
+ipcMain.handle('ask-ollama', async (_event, prompt, model) => {
   try {
     if (typeof prompt !== 'string' || !prompt.trim()) {
       return { success: false, error: 'Prompt is required.' }
     }
 
     const response = await ollama.chat({
-      model: 'mannix/llama3.1-8b-abliterated',
+      model,
       messages: [{ role: 'user', content: prompt }],
     })
 

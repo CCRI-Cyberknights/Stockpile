@@ -1,22 +1,28 @@
 // src/pages/SessionPage.jsx
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { dom, networking } from '../util'
-
-networking.isOllamaPresent().then((result) => {
-  console.log('RESULT =', result)
-})
-
 
 const starterPrompt = [
   'You are assisting with a capture-the-flag practice session.',
   'Confirm that you are online and ready to inspect page structure, controls, and suspicious DOM behavior.',
 ].join(' ')
 
-function SessionPage() {
+function SessionPage({appState, setAppState}) {
   const [prompt, setPrompt] = useState(starterPrompt)
   const [response, setResponse] = useState('')
   const [error, setError] = useState('')
   const [isLoading, setIsLoading] = useState(false)
+
+  useEffect(() => {
+    const audio = new Audio('/media/audio/REACH_Stockpile.wav')
+    audio.volume = 0.3
+
+    audio.play().then(() => {
+      console.log('Startup audio playing.')
+    }).catch((err) => {
+      console.error('Audio error:', err)
+    })
+  }, [])
 
   const hasBridge =
     typeof window !== 'undefined' && typeof window.api?.askOllama === 'function'
@@ -42,7 +48,7 @@ function SessionPage() {
   setError('')
 
   try {
-    const result = await window.api.askOllama(cleanPrompt)
+    const result = await window.api.askOllama(cleanPrompt, appState.selectedModel ?? 'mannix/llama3.1-8b-abliterated') // default to allModels[0] later on.
 
     if (!result?.success) {
       setError(result?.error ?? 'Ollama did not return a response.')
@@ -71,17 +77,14 @@ function SessionPage() {
         <div className="hero-copy">
           <p className="eyebrow">Local AI CTF Workspace</p>
           <h1>Stockpile</h1>
-          <p className="lede">
-            The Electron codebase is restored around a React renderer, with the existing Ollama IPC bridge ready for prompt-driven workflows.
-          </p>
         </div>
 
         <aside className="hero-status">
-          <span className={`status-pill ${hasBridge ? 'ready' : 'missing'}`}>
+          {/* <span className={`status-pill ${hasBridge ? 'ready' : 'missing'}`}>
             {hasBridge ? 'Electron bridge online' : 'Electron bridge missing'}
-          </span>
-          <p>Model target: mannix/llama3.1-8b-abliterated</p>
-          <p>Ollama host: 127.0.0.1:11434</p>
+          </span> */}
+          <p>Model target: {appState.selectedModel?.name ?? 'none'}</p>
+          <p>Ollama Net Socket: 127.0.0.1:11434</p>
         </aside>
       </header>
 
