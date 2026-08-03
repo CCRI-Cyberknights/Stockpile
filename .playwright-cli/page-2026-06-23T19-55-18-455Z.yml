@@ -1,0 +1,675 @@
+- generic [active] [ref=e1]:
+  - dialog "cookieconsent" [ref=e2]:
+    - generic [ref=e3]:
+      - text: This website uses cookies to manage authentication, for analytics, and other functions.
+      - button "learn more about cookies" [ref=e4] [cursor=pointer]: Privacy policy
+    - button "dismiss cookie message" [ref=e6] [cursor=pointer]: Got it!
+  - generic [ref=e9]:
+    - link "CTFtime.org" [ref=e10] [cursor=pointer]:
+      - /url: //ctftime.org/
+      - img "CTFtime.org" [ref=e11]
+    - generic:
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - link "CTFs" [ref=e14] [cursor=pointer]:
+            - /url: /ctfs
+        - listitem [ref=e15]:
+          - link "Upcoming" [ref=e16] [cursor=pointer]:
+            - /url: /event/list/upcoming
+        - listitem [ref=e17]:
+          - link "Archive" [ref=e18] [cursor=pointer]:
+            - /url: "#"
+            - text: Archive
+        - listitem [ref=e20]:
+          - link "Calendar" [ref=e21] [cursor=pointer]:
+            - /url: /calendar/
+        - listitem [ref=e22]:
+          - link "Teams" [ref=e23] [cursor=pointer]:
+            - /url: "#"
+            - text: Teams
+        - listitem [ref=e25]:
+          - link "FAQ" [ref=e26] [cursor=pointer]:
+            - /url: /faq/
+        - listitem [ref=e27]:
+          - link "Contact us" [ref=e28] [cursor=pointer]:
+            - /url: "#"
+            - text: Contact us
+        - listitem [ref=e30]:
+          - link "About" [ref=e31] [cursor=pointer]:
+            - /url: /about/
+      - list [ref=e32]:
+        - listitem [ref=e33]
+        - listitem [ref=e34]:
+          - link "Sign in" [ref=e35] [cursor=pointer]:
+            - /url: "#loginModal"
+  - generic [ref=e36]:
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - heading "Team rating" [level=2] [ref=e40]:
+          - link "Team rating" [ref=e41] [cursor=pointer]:
+            - /url: /stats/
+        - list [ref=e42]:
+          - listitem [ref=e43]:
+            - link "2026" [ref=e44]:
+              - /url: "#rating_2026"
+          - listitem [ref=e45]:
+            - link "2025" [ref=e46] [cursor=pointer]:
+              - /url: "#rating_2025"
+          - listitem [ref=e47]:
+            - link "2024" [ref=e48] [cursor=pointer]:
+              - /url: "#rating_2024"
+          - listitem [ref=e49]:
+            - link "2023" [ref=e50] [cursor=pointer]:
+              - /url: "#rating_2023"
+          - listitem [ref=e51]:
+            - link "2022" [ref=e52] [cursor=pointer]:
+              - /url: "#rating_2022"
+          - listitem [ref=e53]:
+            - link "2021" [ref=e54] [cursor=pointer]:
+              - /url: "#rating_2021"
+          - listitem [ref=e55]:
+            - link "2020" [ref=e56] [cursor=pointer]:
+              - /url: "#rating_2020"
+          - listitem [ref=e57]:
+            - link "2019" [ref=e58] [cursor=pointer]:
+              - /url: "#rating_2019"
+          - listitem [ref=e59]:
+            - link "2018" [ref=e60] [cursor=pointer]:
+              - /url: "#rating_2018"
+          - listitem [ref=e61]:
+            - link "2017" [ref=e62] [cursor=pointer]:
+              - /url: "#rating_2017"
+          - listitem [ref=e63]:
+            - link "2016" [ref=e64] [cursor=pointer]:
+              - /url: "#rating_2016"
+          - listitem [ref=e65]:
+            - link "2015" [ref=e66] [cursor=pointer]:
+              - /url: "#rating_2015"
+          - listitem [ref=e67]:
+            - link "2014" [ref=e68] [cursor=pointer]:
+              - /url: "#rating_2014"
+          - listitem [ref=e69]:
+            - link "2013" [ref=e70] [cursor=pointer]:
+              - /url: "#rating_2013"
+          - listitem [ref=e71]:
+            - link "2012" [ref=e72] [cursor=pointer]:
+              - /url: "#rating_2012"
+          - listitem [ref=e73]:
+            - link "2011" [ref=e74] [cursor=pointer]:
+              - /url: "#rating_2011"
+        - generic [ref=e75]:
+          - table [ref=e77]:
+            - rowgroup [ref=e78]:
+              - row "Place Team Country Rating" [ref=e79]:
+                - columnheader "Place" [ref=e80]
+                - columnheader "Team" [ref=e81]
+                - columnheader "Country" [ref=e82]
+                - columnheader "Rating" [ref=e83]
+              - row "1 TeamH4C KR 1005.106" [ref=e84]:
+                - cell [ref=e85]
+                - cell "1" [ref=e86]
+                - cell "TeamH4C" [ref=e87]:
+                  - link "TeamH4C" [ref=e88] [cursor=pointer]:
+                    - /url: /team/1301
+                - cell "KR" [ref=e89]:
+                  - link "KR" [ref=e90] [cursor=pointer]:
+                    - /url: /stats/2025/KR
+                    - img "KR" [ref=e91]
+                - cell "1005.106" [ref=e92]
+              - row "2 RubiyaLab KR 879.148" [ref=e93]:
+                - cell [ref=e94]
+                - cell "2" [ref=e95]
+                - cell "RubiyaLab" [ref=e96]:
+                  - link "RubiyaLab" [ref=e97] [cursor=pointer]:
+                    - /url: /team/303159
+                - cell "KR" [ref=e98]:
+                  - link "KR" [ref=e99] [cursor=pointer]:
+                    - /url: /stats/2025/KR
+                    - img "KR" [ref=e100]
+                - cell "879.148" [ref=e101]
+              - row "3 H-T8 FI 877.004" [ref=e102]:
+                - cell [ref=e103]
+                - cell "3" [ref=e104]
+                - cell "H-T8" [ref=e105]:
+                  - link "H-T8" [ref=e106] [cursor=pointer]:
+                    - /url: /team/376192
+                - cell "FI" [ref=e107]:
+                  - link "FI" [ref=e108] [cursor=pointer]:
+                    - /url: /stats/2025/FI
+                    - img "FI" [ref=e109]
+                - cell "877.004" [ref=e110]
+              - row "4 tjcsc US 770.742" [ref=e111]:
+                - cell [ref=e112]
+                - cell "4" [ref=e113]
+                - cell "tjcsc" [ref=e114]:
+                  - link "tjcsc" [ref=e115] [cursor=pointer]:
+                    - /url: /team/53812
+                - cell "US" [ref=e116]:
+                  - link "US" [ref=e117] [cursor=pointer]:
+                    - /url: /stats/2025/US
+                    - img "US" [ref=e118]
+                - cell "770.742" [ref=e119]
+              - row "5 Infobahn 718.187" [ref=e120]:
+                - cell [ref=e121]
+                - cell "5" [ref=e122]
+                - cell "Infobahn" [ref=e123]:
+                  - link "Infobahn" [ref=e124] [cursor=pointer]:
+                    - /url: /team/364723
+                - cell [ref=e125]
+                - cell "718.187" [ref=e126]
+              - row "6 W4llz 686.407" [ref=e127]:
+                - cell [ref=e128]
+                - cell "6" [ref=e129]
+                - cell "W4llz" [ref=e130]:
+                  - link "W4llz" [ref=e131] [cursor=pointer]:
+                    - /url: /team/397301
+                - cell [ref=e132]
+                - cell "686.407" [ref=e133]
+              - row "7 z0d1ak IN 606.243" [ref=e134]:
+                - cell [ref=e135]
+                - cell "7" [ref=e136]
+                - cell "z0d1ak" [ref=e137]:
+                  - link "z0d1ak" [ref=e138] [cursor=pointer]:
+                    - /url: /team/373452
+                - cell "IN" [ref=e139]:
+                  - link "IN" [ref=e140] [cursor=pointer]:
+                    - /url: /stats/2025/IN
+                    - img "IN" [ref=e141]
+                - cell "606.243" [ref=e142]
+              - row "8 r3kapig CN 595.107" [ref=e143]:
+                - cell [ref=e144]
+                - cell "8" [ref=e145]
+                - cell "r3kapig" [ref=e146]:
+                  - link "r3kapig" [ref=e147] [cursor=pointer]:
+                    - /url: /team/58979
+                - cell "CN" [ref=e148]:
+                  - link "CN" [ref=e149] [cursor=pointer]:
+                    - /url: /stats/2025/CN
+                    - img "CN" [ref=e150]
+                - cell "595.107" [ref=e151]
+              - row "9 0xFUN SA 595.021" [ref=e152]:
+                - cell [ref=e153]
+                - cell "9" [ref=e154]
+                - cell "0xFUN" [ref=e155]:
+                  - link "0xFUN" [ref=e156] [cursor=pointer]:
+                    - /url: /team/354033
+                - cell "SA" [ref=e157]:
+                  - link "SA" [ref=e158] [cursor=pointer]:
+                    - /url: /stats/2025/SA
+                    - img "SA" [ref=e159]
+                - cell "595.021" [ref=e160]
+              - row "10 BunkyoWesterns JP 560.722" [ref=e161]:
+                - cell [ref=e162]
+                - cell "10" [ref=e163]
+                - cell "BunkyoWesterns" [ref=e164]:
+                  - link "BunkyoWesterns" [ref=e165] [cursor=pointer]:
+                    - /url: /team/269765
+                - cell "JP" [ref=e166]:
+                  - link "JP" [ref=e167] [cursor=pointer]:
+                    - /url: /stats/2025/JP
+                    - img "JP" [ref=e168]
+                - cell "560.722" [ref=e169]
+          - paragraph [ref=e170]:
+            - link "Full rating" [ref=e171] [cursor=pointer]:
+              - /url: /stats/
+            - text: "|"
+            - link "Rating formula" [ref=e172] [cursor=pointer]:
+              - /url: /rating-formula/
+          - paragraph
+        - heading "Upcoming events" [level=2] [ref=e173]:
+          - link "Upcoming events" [ref=e174] [cursor=pointer]:
+            - /url: /event/list/upcoming
+          - link [ref=e175] [cursor=pointer]:
+            - /url: /calendar/
+            - img [ref=e176]
+          - link [ref=e177] [cursor=pointer]:
+            - /url: /event/list/upcoming/rss/
+            - img [ref=e178]
+        - list [ref=e179]:
+          - listitem [ref=e180]:
+            - link "Open" [ref=e181]:
+              - /url: "#upcoming"
+          - listitem [ref=e182]:
+            - link "Finals" [ref=e183] [cursor=pointer]:
+              - /url: "#upcoming_prequalified"
+        - table [ref=e186]:
+          - rowgroup [ref=e187]:
+            - row "Format Name Date Duration" [ref=e188]:
+              - columnheader "Format" [ref=e189]
+              - columnheader "Name" [ref=e190]
+              - columnheader "Date" [ref=e191]
+              - columnheader "Duration" [ref=e192]
+            - row "Jeopardy TraceBash CTF 2026 On-line Fri, June 26, 09:30 — Sat, June 27, 09:30 UTC 95 teams 1d 0h" [ref=e193]:
+              - cell "Jeopardy" [ref=e194]:
+                - img "Jeopardy" [ref=e195]
+              - cell "TraceBash CTF 2026 On-line" [ref=e196]:
+                - link "TraceBash CTF 2026" [ref=e197] [cursor=pointer]:
+                  - /url: /event/3323
+                - img [ref=e198]
+                - text: On-line
+              - cell "Fri, June 26, 09:30 — Sat, June 27, 09:30 UTC 95 teams" [ref=e199]:
+                - text: Fri, June 26, 09:30 — Sat, June 27, 09:30 UTC
+                - generic [ref=e200]: 95 teams
+              - cell "1d 0h" [ref=e201]
+            - row "Jeopardy Grey Cat The Flag 2026 Finals Singapore Sat, June 27, 02:00 — Sun, June 28, 02:00 UTC 29 teams 1d 0h" [ref=e202]:
+              - cell "Jeopardy" [ref=e203]:
+                - img "Jeopardy" [ref=e204]
+              - cell "Grey Cat The Flag 2026 Finals Singapore" [ref=e205]:
+                - link "Grey Cat The Flag 2026 Finals" [ref=e206] [cursor=pointer]:
+                  - /url: /event/3173
+                - img [ref=e207]
+                - text: Singapore
+              - cell "Sat, June 27, 02:00 — Sun, June 28, 02:00 UTC 29 teams" [ref=e208]:
+                - text: Sat, June 27, 02:00 — Sun, June 28, 02:00 UTC
+                - generic [ref=e209]: 29 teams
+              - cell "1d 0h" [ref=e210]
+            - row "Jeopardy V1T CTF 2026 On-line Sat, June 27, 02:00 — Sun, June 28, 14:00 UTC 184 teams 1d 12h" [ref=e211]:
+              - cell "Jeopardy" [ref=e212]:
+                - img "Jeopardy" [ref=e213]
+              - cell "V1T CTF 2026 On-line" [ref=e214]:
+                - link "V1T CTF 2026" [ref=e215] [cursor=pointer]:
+                  - /url: /event/3249
+                - img [ref=e216]
+                - text: On-line
+              - cell "Sat, June 27, 02:00 — Sun, June 28, 14:00 UTC 184 teams" [ref=e217]:
+                - text: Sat, June 27, 02:00 — Sun, June 28, 14:00 UTC
+                - generic [ref=e218]: 184 teams
+              - cell "1d 12h" [ref=e219]
+            - row "Jeopardy SekaiCTF 2026 On-line Sat, June 27, 08:00 — Mon, June 29, 08:00 UTC 185 teams 2d 0h" [ref=e220]:
+              - cell "Jeopardy" [ref=e221]:
+                - img "Jeopardy" [ref=e222]
+              - cell "SekaiCTF 2026 On-line" [ref=e223]:
+                - link "SekaiCTF 2026" [ref=e224] [cursor=pointer]:
+                  - /url: /event/3113
+                - img [ref=e225]
+                - text: On-line
+              - cell "Sat, June 27, 08:00 — Mon, June 29, 08:00 UTC 185 teams" [ref=e226]:
+                - text: Sat, June 27, 08:00 — Mon, June 29, 08:00 UTC
+                - generic [ref=e227]: 185 teams
+              - cell "2d 0h" [ref=e228]
+            - row "Jeopardy MntcrlCTF 2026 On-line Sat, June 27, 16:00 — Sun, June 28, 16:00 UTC 28 teams 1d 0h" [ref=e229]:
+              - cell "Jeopardy" [ref=e230]:
+                - img "Jeopardy" [ref=e231]
+              - cell "MntcrlCTF 2026 On-line" [ref=e232]:
+                - link "MntcrlCTF 2026" [ref=e233] [cursor=pointer]:
+                  - /url: /event/3282
+                - img [ref=e234]
+                - text: On-line
+              - cell "Sat, June 27, 16:00 — Sun, June 28, 16:00 UTC 28 teams" [ref=e235]:
+                - text: Sat, June 27, 16:00 — Sun, June 28, 16:00 UTC
+                - generic [ref=e236]: 28 teams
+              - cell "1d 0h" [ref=e237]
+      - generic [ref=e238]:
+        - heading "Past events" [level=2] [ref=e240]:
+          - link "Past events" [ref=e241] [cursor=pointer]:
+            - /url: /event/list/past
+          - link [ref=e242] [cursor=pointer]:
+            - /url: /event/list/archive/rss/
+            - img [ref=e243]
+        - list [ref=e244]:
+          - listitem [ref=e245]:
+            - link "With scoreboard" [ref=e246]:
+              - /url: "#past"
+          - listitem [ref=e247]:
+            - link "All" [ref=e248] [cursor=pointer]:
+              - /url: "#past_all"
+        - generic [ref=e250]:
+          - 'heading "Jeopardy RIFFHACK: Black Market Break-In" [level=3] [ref=e251]':
+            - link "Jeopardy" [ref=e252] [cursor=pointer]:
+              - /url: /event/3297
+              - img "Jeopardy" [ref=e253]
+            - 'link "RIFFHACK: Black Market Break-In" [ref=e254] [cursor=pointer]':
+              - /url: /event/3297
+          - paragraph [ref=e255]: June 22, 2026 00:00 UTC | On-line
+          - table [ref=e256]:
+            - rowgroup [ref=e257]:
+              - row "Place Team Country Points" [ref=e258]:
+                - columnheader "Place" [ref=e259]
+                - columnheader "Team" [ref=e260]
+                - columnheader "Country" [ref=e261]
+                - columnheader "Points" [ref=e262]
+              - row "1 H3XSEC ZA 0.000" [ref=e263]:
+                - cell [ref=e264]
+                - cell "1" [ref=e265]
+                - cell "H3XSEC" [ref=e266]:
+                  - link "H3XSEC" [ref=e267] [cursor=pointer]:
+                    - /url: /team/422535
+                - cell "ZA" [ref=e268]:
+                  - img "ZA" [ref=e269]
+                - cell "0.000" [ref=e270]
+              - row "2 Axi0N IN 0.000" [ref=e271]:
+                - cell [ref=e272]
+                - cell "2" [ref=e273]
+                - cell "Axi0N" [ref=e274]:
+                  - link "Axi0N" [ref=e275] [cursor=pointer]:
+                    - /url: /team/439112
+                - cell "IN" [ref=e276]:
+                  - img "IN" [ref=e277]
+                - cell "0.000" [ref=e278]
+              - row "3 csdc TW 0.000" [ref=e279]:
+                - cell [ref=e280]
+                - cell "3" [ref=e281]
+                - cell "csdc" [ref=e282]:
+                  - link "csdc" [ref=e283] [cursor=pointer]:
+                    - /url: /team/387786
+                - cell "TW" [ref=e284]:
+                  - img "TW" [ref=e285]
+                - cell "0.000" [ref=e286]
+          - paragraph [ref=e287]:
+            - link "513 teams total" [ref=e288] [cursor=pointer]:
+              - /url: /event/3297
+            - text: "|"
+            - link "Tasks and writeups" [ref=e289] [cursor=pointer]:
+              - /url: /event/3297/tasks/
+          - heading "Jeopardy Sieberrsec CTF 7.0" [level=3] [ref=e290]:
+            - link "Jeopardy" [ref=e291] [cursor=pointer]:
+              - /url: /event/3299
+              - img "Jeopardy" [ref=e292]
+            - link "Sieberrsec CTF 7.0" [ref=e293] [cursor=pointer]:
+              - /url: /event/3299
+          - paragraph [ref=e294]:
+            - text: June 17, 2026 13:00 UTC | On-line |
+            - link "Weight voting in progress" [ref=e295] [cursor=pointer]:
+              - /url: /event/3299/weight
+          - table [ref=e296]:
+            - rowgroup [ref=e297]:
+              - row "Place Team Country Points *" [ref=e298]:
+                - columnheader "Place" [ref=e299]
+                - columnheader "Team" [ref=e300]
+                - columnheader "Country" [ref=e301]
+                - columnheader "Points *" [ref=e302]:
+                  - text: Points
+                  - link "*" [ref=e303] [cursor=pointer]:
+                    - /url: /event/3299/weight
+              - row "1 WillHack4Coffee KH 0.000" [ref=e304]:
+                - cell [ref=e305]
+                - cell "1" [ref=e306]
+                - cell "WillHack4Coffee" [ref=e307]:
+                  - link "WillHack4Coffee" [ref=e308] [cursor=pointer]:
+                    - /url: /team/436924
+                - cell "KH" [ref=e309]:
+                  - img "KH" [ref=e310]
+                - cell "0.000" [ref=e311]
+              - row "2 Fisabilillah ID 0.000" [ref=e312]:
+                - cell [ref=e313]
+                - cell "2" [ref=e314]
+                - cell "Fisabilillah" [ref=e315]:
+                  - link "Fisabilillah" [ref=e316] [cursor=pointer]:
+                    - /url: /team/354285
+                - cell "ID" [ref=e317]:
+                  - img "ID" [ref=e318]
+                - cell "0.000" [ref=e319]
+              - row "3 blimpers 0.000" [ref=e320]:
+                - cell [ref=e321]
+                - cell "3" [ref=e322]
+                - cell "blimpers" [ref=e323]:
+                  - link "blimpers" [ref=e324] [cursor=pointer]:
+                    - /url: /team/436952
+                - cell [ref=e325]
+                - cell "0.000" [ref=e326]
+          - paragraph [ref=e327]:
+            - link "216 teams total" [ref=e328] [cursor=pointer]:
+              - /url: /event/3299
+            - text: "|"
+            - link "Tasks and writeups" [ref=e329] [cursor=pointer]:
+              - /url: /event/3299/tasks/
+          - heading "Jeopardy boroCTF 2026" [level=3] [ref=e330]:
+            - link "Jeopardy" [ref=e331] [cursor=pointer]:
+              - /url: /event/3309
+              - img "Jeopardy" [ref=e332]
+            - link "boroCTF 2026" [ref=e333] [cursor=pointer]:
+              - /url: /event/3309
+          - paragraph [ref=e334]: June 16, 2026 03:59 UTC | New Jersey
+          - table [ref=e335]:
+            - rowgroup [ref=e336]:
+              - row "Place Team Country Points" [ref=e337]:
+                - columnheader "Place" [ref=e338]
+                - columnheader "Team" [ref=e339]
+                - columnheader "Country" [ref=e340]
+                - columnheader "Points" [ref=e341]
+              - row "1 tjcsc US 50.000" [ref=e342]:
+                - cell [ref=e343]
+                - cell "1" [ref=e344]
+                - cell "tjcsc" [ref=e345]:
+                  - link "tjcsc" [ref=e346] [cursor=pointer]:
+                    - /url: /team/53812
+                - cell "US" [ref=e347]:
+                  - img "US" [ref=e348]
+                - cell "50.000" [ref=e349]
+              - row "2 CTF Larpers US 37.500" [ref=e350]:
+                - cell [ref=e351]
+                - cell "2" [ref=e352]
+                - cell "CTF Larpers" [ref=e353]:
+                  - link "CTF Larpers" [ref=e354] [cursor=pointer]:
+                    - /url: /team/438410
+                - cell "US" [ref=e355]:
+                  - img "US" [ref=e356]
+                - cell "37.500" [ref=e357]
+              - row "3 Cyber 552 AX 33.333" [ref=e358]:
+                - cell [ref=e359]
+                - cell "3" [ref=e360]
+                - cell "Cyber 552" [ref=e361]:
+                  - link "Cyber 552" [ref=e362] [cursor=pointer]:
+                    - /url: /team/439103
+                - cell "AX" [ref=e363]:
+                  - img "AX" [ref=e364]
+                - cell "33.333" [ref=e365]
+          - paragraph [ref=e366]:
+            - link "819 teams total" [ref=e367] [cursor=pointer]:
+              - /url: /event/3309
+            - text: "|"
+            - link "Tasks and writeups" [ref=e368] [cursor=pointer]:
+              - /url: /event/3309/tasks/
+    - heading "New writeups" [level=2] [ref=e370]:
+      - link "New writeups" [ref=e371] [cursor=pointer]:
+        - /url: /writeups
+      - link [ref=e372] [cursor=pointer]:
+        - /url: /writeups/rss/
+        - img [ref=e373]
+    - table [ref=e374]:
+      - rowgroup [ref=e375]:
+        - row "Team Event Task Action" [ref=e376]:
+          - columnheader "Team" [ref=e377]
+          - columnheader "Event" [ref=e378]
+          - columnheader "Task" [ref=e379]
+          - columnheader "Action" [ref=e380]
+        - row "ZERODAY GUYS boroCTF 2026 dotdotslashflagtxt [100] read writeup" [ref=e381]:
+          - cell "ZERODAY GUYS" [ref=e382]:
+            - link "ZERODAY GUYS" [ref=e383] [cursor=pointer]:
+              - /url: /team/425380
+          - cell "boroCTF 2026" [ref=e384]:
+            - link "boroCTF 2026" [ref=e385] [cursor=pointer]:
+              - /url: /event/3309
+          - cell "dotdotslashflagtxt [100]" [ref=e386]:
+            - link "dotdotslashflagtxt [100]" [ref=e387] [cursor=pointer]:
+              - /url: /task/32720
+          - cell "read writeup" [ref=e388]:
+            - link "read writeup" [ref=e389] [cursor=pointer]:
+              - /url: /writeup/40867
+        - row "ZERODAY GUYS boroCTF 2026 Beyond the homepage [100] read writeup" [ref=e390]:
+          - cell "ZERODAY GUYS" [ref=e391]:
+            - link "ZERODAY GUYS" [ref=e392] [cursor=pointer]:
+              - /url: /team/425380
+          - cell "boroCTF 2026" [ref=e393]:
+            - link "boroCTF 2026" [ref=e394] [cursor=pointer]:
+              - /url: /event/3309
+          - cell "Beyond the homepage [100]" [ref=e395]:
+            - link "Beyond the homepage [100]" [ref=e396] [cursor=pointer]:
+              - /url: /task/32717
+          - cell "read writeup" [ref=e397]:
+            - link "read writeup" [ref=e398] [cursor=pointer]:
+              - /url: /writeup/40866
+        - row "ZERODAY GUYS boroCTF 2026 boro-senpal 1 [100] read writeup" [ref=e399]:
+          - cell "ZERODAY GUYS" [ref=e400]:
+            - link "ZERODAY GUYS" [ref=e401] [cursor=pointer]:
+              - /url: /team/425380
+          - cell "boroCTF 2026" [ref=e402]:
+            - link "boroCTF 2026" [ref=e403] [cursor=pointer]:
+              - /url: /event/3309
+          - cell "boro-senpal 1 [100]" [ref=e404]:
+            - link "boro-senpal 1 [100]" [ref=e405] [cursor=pointer]:
+              - /url: /task/32718
+          - cell "read writeup" [ref=e406]:
+            - link "read writeup" [ref=e407] [cursor=pointer]:
+              - /url: /writeup/40865
+        - row "ZERODAY GUYS boroCTF 2026 crackin the vault [100] read writeup" [ref=e408]:
+          - cell "ZERODAY GUYS" [ref=e409]:
+            - link "ZERODAY GUYS" [ref=e410] [cursor=pointer]:
+              - /url: /team/425380
+          - cell "boroCTF 2026" [ref=e411]:
+            - link "boroCTF 2026" [ref=e412] [cursor=pointer]:
+              - /url: /event/3309
+          - cell "crackin the vault [100]" [ref=e413]:
+            - link "crackin the vault [100]" [ref=e414] [cursor=pointer]:
+              - /url: /task/32719
+          - cell "read writeup" [ref=e415]:
+            - link "read writeup" [ref=e416] [cursor=pointer]:
+              - /url: /writeup/40864
+        - row "RubiyaLab SAS CTF 2026 Quals Snaking Revenge [171] read writeup" [ref=e417]:
+          - cell "RubiyaLab" [ref=e418]:
+            - link "RubiyaLab" [ref=e419] [cursor=pointer]:
+              - /url: /team/303159
+          - cell "SAS CTF 2026 Quals" [ref=e420]:
+            - link "SAS CTF 2026 Quals" [ref=e421] [cursor=pointer]:
+              - /url: /event/3109
+          - cell "Snaking Revenge [171]" [ref=e422]:
+            - link "Snaking Revenge [171]" [ref=e423] [cursor=pointer]:
+              - /url: /task/32703
+          - cell "read writeup" [ref=e424]:
+            - link "read writeup" [ref=e425] [cursor=pointer]:
+              - /url: /writeup/40862
+        - row "GR3B0M4 SAS CTF 2026 Quals Kolobok [254] read writeup" [ref=e426]:
+          - cell "GR3B0M4" [ref=e427]:
+            - link "GR3B0M4" [ref=e428] [cursor=pointer]:
+              - /url: /team/381071
+          - cell "SAS CTF 2026 Quals" [ref=e429]:
+            - link "SAS CTF 2026 Quals" [ref=e430] [cursor=pointer]:
+              - /url: /event/3109
+          - cell "Kolobok [254]" [ref=e431]:
+            - link "Kolobok [254]" [ref=e432] [cursor=pointer]:
+              - /url: /task/32693
+          - cell "read writeup" [ref=e433]:
+            - link "read writeup" [ref=e434] [cursor=pointer]:
+              - /url: /writeup/40861
+        - row "Behind the Curve THEM?!CTF 2026 warm-up [100] read writeup" [ref=e435]:
+          - cell "Behind the Curve" [ref=e436]:
+            - link "Behind the Curve" [ref=e437] [cursor=pointer]:
+              - /url: /team/195777
+          - cell "THEM?!CTF 2026" [ref=e438]:
+            - link "THEM?!CTF 2026" [ref=e439] [cursor=pointer]:
+              - /url: /event/3209
+          - cell "warm-up [100]" [ref=e440]:
+            - link "warm-up [100]" [ref=e441] [cursor=pointer]:
+              - /url: /task/32676
+          - cell "read writeup" [ref=e442]:
+            - link "read writeup" [ref=e443] [cursor=pointer]:
+              - /url: /writeup/40852
+        - row "Pwnissa TRX CTF 2026 house-of-fishing [30] read writeup" [ref=e444]:
+          - cell "Pwnissa" [ref=e445]:
+            - link "Pwnissa" [ref=e446] [cursor=pointer]:
+              - /url: /team/386813
+          - cell "TRX CTF 2026" [ref=e447]:
+            - link "TRX CTF 2026" [ref=e448] [cursor=pointer]:
+              - /url: /event/3141
+          - cell "house-of-fishing [30]" [ref=e449]:
+            - link "house-of-fishing [30]" [ref=e450] [cursor=pointer]:
+              - /url: /task/32243
+          - cell "read writeup" [ref=e451]:
+            - link "read writeup" [ref=e452] [cursor=pointer]:
+              - /url: /writeup/40815
+        - row "TCP1P plfanzen CFT 2026 Cryptografie read writeup" [ref=e453]:
+          - cell "TCP1P" [ref=e454]:
+            - link "TCP1P" [ref=e455] [cursor=pointer]:
+              - /url: /team/187248
+          - cell "plfanzen CFT 2026" [ref=e456]:
+            - link "plfanzen CFT 2026" [ref=e457] [cursor=pointer]:
+              - /url: /event/3090
+          - cell "Cryptografie" [ref=e458]:
+            - link "Cryptografie" [ref=e459] [cursor=pointer]:
+              - /url: /task/32451
+          - cell "read writeup" [ref=e460]:
+            - link "read writeup" [ref=e461] [cursor=pointer]:
+              - /url: /writeup/40814
+        - row "TCP1P plfanzen CFT 2026 forgetful read writeup" [ref=e462]:
+          - cell "TCP1P" [ref=e463]:
+            - link "TCP1P" [ref=e464] [cursor=pointer]:
+              - /url: /team/187248
+          - cell "plfanzen CFT 2026" [ref=e465]:
+            - link "plfanzen CFT 2026" [ref=e466] [cursor=pointer]:
+              - /url: /event/3090
+          - cell "forgetful" [ref=e467]:
+            - link "forgetful" [ref=e468] [cursor=pointer]:
+              - /url: /task/32454
+          - cell "read writeup" [ref=e469]:
+            - link "read writeup" [ref=e470] [cursor=pointer]:
+              - /url: /writeup/40813
+    - heading "Last changes" [level=2] [ref=e472]:
+      - link "Last changes" [ref=e473] [cursor=pointer]:
+        - /url: /lastlog
+    - table [ref=e474]:
+      - rowgroup [ref=e475]:
+        - row "June 23, 2026, 4:52 p.m. \"TFC CTF 2026\" published." [ref=e476]:
+          - cell "June 23, 2026, 4:52 p.m. \"TFC CTF 2026\" published." [ref=e477]:
+            - link "June 23, 2026, 4:52 p.m." [ref=e478] [cursor=pointer]:
+              - /url: /event/3344
+            - text: "\"TFC CTF 2026\" published."
+        - row "June 23, 2026, 4:52 p.m. \"TFC CTF 2026\" is publically votable." [ref=e479]:
+          - cell "June 23, 2026, 4:52 p.m. \"TFC CTF 2026\" is publically votable." [ref=e480]:
+            - link "June 23, 2026, 4:52 p.m." [ref=e481] [cursor=pointer]:
+              - /url: /event/3344
+            - text: "\"TFC CTF 2026\" is publically votable."
+        - 'row "June 22, 2026, 12:27 p.m. \"RIFFHACK: Black Market Break-In\" scoreboard added." [ref=e482]':
+          - 'cell "June 22, 2026, 12:27 p.m. \"RIFFHACK: Black Market Break-In\" scoreboard added." [ref=e483]':
+            - link "June 22, 2026, 12:27 p.m." [ref=e484] [cursor=pointer]:
+              - /url: /event/3297
+            - text: "\"RIFFHACK: Black Market Break-In\" scoreboard added."
+        - row "June 21, 2026, 10:21 p.m. \"PINK+ CTF 2026\" published." [ref=e485]:
+          - cell "June 21, 2026, 10:21 p.m. \"PINK+ CTF 2026\" published." [ref=e486]:
+            - link "June 21, 2026, 10:21 p.m." [ref=e487] [cursor=pointer]:
+              - /url: /event/3331
+            - text: "\"PINK+ CTF 2026\" published."
+        - row "June 21, 2026, 10:21 p.m. \"PINK+ CTF 2026\" is publically votable." [ref=e488]:
+          - cell "June 21, 2026, 10:21 p.m. \"PINK+ CTF 2026\" is publically votable." [ref=e489]:
+            - link "June 21, 2026, 10:21 p.m." [ref=e490] [cursor=pointer]:
+              - /url: /event/3331
+            - text: "\"PINK+ CTF 2026\" is publically votable."
+        - row "June 21, 2026, 10:04 p.m. \"GlacierCTF 2026\" published." [ref=e491]:
+          - cell "June 21, 2026, 10:04 p.m. \"GlacierCTF 2026\" published." [ref=e492]:
+            - link "June 21, 2026, 10:04 p.m." [ref=e493] [cursor=pointer]:
+              - /url: /event/3337
+            - text: "\"GlacierCTF 2026\" published."
+        - row "June 21, 2026, 10:04 p.m. \"GlacierCTF 2026\" is publically votable." [ref=e494]:
+          - cell "June 21, 2026, 10:04 p.m. \"GlacierCTF 2026\" is publically votable." [ref=e495]:
+            - link "June 21, 2026, 10:04 p.m." [ref=e496] [cursor=pointer]:
+              - /url: /event/3337
+            - text: "\"GlacierCTF 2026\" is publically votable."
+        - row "June 21, 2026, 10 p.m. \"AEROSPACE VILLAGE STARPWN CTF\" published." [ref=e497]:
+          - cell "June 21, 2026, 10 p.m. \"AEROSPACE VILLAGE STARPWN CTF\" published." [ref=e498]:
+            - link "June 21, 2026, 10 p.m." [ref=e499] [cursor=pointer]:
+              - /url: /event/3342
+            - text: "\"AEROSPACE VILLAGE STARPWN CTF\" published."
+        - row "June 21, 2026, 10 p.m. \"AEROSPACE VILLAGE STARPWN CTF\" is publically votable." [ref=e500]:
+          - cell "June 21, 2026, 10 p.m. \"AEROSPACE VILLAGE STARPWN CTF\" is publically votable." [ref=e501]:
+            - link "June 21, 2026, 10 p.m." [ref=e502] [cursor=pointer]:
+              - /url: /event/3342
+            - text: "\"AEROSPACE VILLAGE STARPWN CTF\" is publically votable."
+        - row "June 21, 2026, 9:58 p.m. \"Thryve CTF 2026\" published." [ref=e503]:
+          - cell "June 21, 2026, 9:58 p.m. \"Thryve CTF 2026\" published." [ref=e504]:
+            - link "June 21, 2026, 9:58 p.m." [ref=e505] [cursor=pointer]:
+              - /url: /event/3330
+            - text: "\"Thryve CTF 2026\" published."
+  - contentinfo [ref=e506]:
+    - generic [ref=e507]:
+      - paragraph [ref=e508]:
+        - link "Follow @CTFtime" [ref=e509] [cursor=pointer]:
+          - /url: //twitter.com/CTFtime
+      - paragraph [ref=e510]: © 2012 — 2025 CTFtime team.
+      - paragraph [ref=e511]:
+        - text: All tasks and writeups are copyrighted by their respective authors.
+        - link "Privacy Policy" [ref=e512] [cursor=pointer]:
+          - /url: /privacy
+        - text: .
+        - text: Hosting provided by
+        - link "Transdata" [ref=e513] [cursor=pointer]:
+          - /url: http://www.transdata.no/
+        - text: .

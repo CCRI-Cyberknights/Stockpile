@@ -1,23 +1,49 @@
-import { dom, networking } from '../util'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 function DashboardPage({ appState, setAppState, onContinue }) {
-    const [selectedModel, setSelectedModel] = useState('')
+    const [targetUrl, setTargetUrl] = useState(appState.targetUrl ?? '')
+    const [error, setError] = useState('')
+    const selectedModel = appState.selectedModel ?? ''
     
     function handleModelChange(event) {
-        let value = event.target.value
+        const value = event.target.value
 
-        setSelectedModel(value)
         setAppState((prev) => ({
             ...prev,
-            selectedModel: appState.allModels[value].name,
+            selectedModel: value,
         }))
         console.log('selectedModel = ', value)
     }
 
+    function normalizeUrl(rawValue) {
+        try {
+            const parsedUrl = new URL(rawValue)
+
+            if (!['http:', 'https:'].includes(parsedUrl.protocol)) {
+                return null
+            }
+
+            return parsedUrl.toString()
+        } catch {
+            return null
+        }
+    }
+
     function handleSubmit(event) {
         event.preventDefault()
-        onContinue?.()
+        const normalizedUrl = normalizeUrl(targetUrl.trim())
+
+        if (!normalizedUrl) {
+            setError('Enter a valid http or https URL before starting the session.')
+            return
+        }
+
+        setError('')
+        setAppState((prev) => ({
+            ...prev,
+            targetUrl: normalizedUrl,
+        }))
+        onContinue?.(normalizedUrl)
     }
 
     return (
@@ -26,7 +52,13 @@ function DashboardPage({ appState, setAppState, onContinue }) {
             <form onSubmit={handleSubmit}>
                 <label>
                     URL:
-                    <input type="text" name="url" placeholder='https://www.ctfsite.com/api/data'/>
+                    <input
+                        type="text"
+                        name="url"
+                        value={targetUrl}
+                        onChange={(event) => setTargetUrl(event.target.value)}
+                        placeholder='https://www.ctfsite.com/api/data'
+                    />
                 </label>
                 <br />
                 <label>
@@ -41,6 +73,7 @@ function DashboardPage({ appState, setAppState, onContinue }) {
                 </label>
                 <br />
                 <button type="submit">Submit</button>
+                {error ? <p>{error}</p> : null}
             </form>
         </div>
     )

@@ -1,4 +1,4 @@
-import { dom, networking } from '../util'
+import { networking } from '../util'
 import { useEffect } from 'react'
 
 function GatePage({ onContinue }) {

@@ -177,6 +177,34 @@ button:disabled {
   flex-direction: column;
 }
 
+.browser-toolbar {
+  margin-top: 18px;
+}
+
+.browser-meta {
+  margin-top: 18px;
+}
+
+.browser-meta p {
+  margin: 0;
+}
+
+.browser-meta p + p {
+  margin-top: 10px;
+}
+
+.browser-meta strong {
+  color: var(--text-main);
+}
+
+.browser-snapshot {
+  min-height: 240px;
+}
+
+.response-heading {
+  margin-top: 20px;
+}
+
 .message,
 .response {
   margin-top: 20px;
